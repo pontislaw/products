@@ -11,3 +11,6 @@ while True:
 print(products)
 print(f"你總共建立了{len(products)}個商品的清單")
 print(f"商品{products[0][0]}價值{products[0][1]}元")
+
+for p in products:
+	print(f"{p[0]}的價格是{p[1]}")
