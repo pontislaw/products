@@ -14,3 +14,8 @@ print(f"商品{products[0][0]}價值{products[0][1]}元")
 
 for p in products:
 	print(f"{p[0]}的價格是{p[1]}")
+
+with open("products.csv", "w", encoding="utf-8") as f:
+	f.write("商品, 價格\n")
+	for p in products:
+		f.write(p[0] + "," + p[1] + "\n")
